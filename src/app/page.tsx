@@ -5,11 +5,15 @@ import ProjectList from "./_components/ProjectList";
 
 export default function Home() {
   return (
-    <main className="relative">
-      <TopNav />
-      <Hero />
-      <ProjectList />
-      <Footer />
+    <main>
+      <div className="relative">
+        <div className="fixed top-0 w-full">
+          <TopNav /> 
+        </div>
+        <Hero />
+        <ProjectList />
+        <Footer />
+      </div>
     </main>
   );
 }
