@@ -8,7 +8,7 @@ export default function TopNav() {
     const path = usePathname()
 
     return (
-        <div className="px-6 md:px-32 lg:px-48 py-8 w-full flex flex-row justify-between backdrop-blur-lg bg-white/10">
+        <div className="px-6 md:px-32 lg:px-48 py-8 flex flex-row justify-between backdrop-blur-lg bg-white/10">
             <div className="w-6 h-6 md:w-8 md:h-8 relative">
                 <Image
                     src="/icon-white.svg"

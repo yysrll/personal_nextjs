@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main>
       <div className="relative">
-        <div className="fixed top-0 w-full">
+        <div className="w-full fixed top-0">
           <TopNav /> 
         </div>
         <Hero />
