@@ -18,9 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}
-      <TopNav />
-      <Footer />
+      <body className={`relative ${inter.className}`}>
+        <TopNav />
+        {children}
+        <Footer />
       </body>
     </html>
   );
