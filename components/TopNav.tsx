@@ -1,11 +1,11 @@
-// 'use client'
+'use client'
 
 import Image from "next/image"
 import Link from "next/link"
-// import { usePathname } from "next/navigation"
+import { usePathname } from "next/navigation"
 
 export default function TopNav() {
-    // const path = usePathname()
+    const path = usePathname()
 
     return (
         <div className="fixed top-0 px-6 md:px-32 lg:px-48 py-8 w-full flex flex-row justify-between backdrop-blur-lg bg-white/10">
@@ -20,7 +20,7 @@ export default function TopNav() {
                 {
                     navigations.map ((nav, index) => (
                         <Link
-                            className={`ms-4 md:ms-6 lg:ms-16 text-sm md:text-md lg:text-lg ${'/' === nav.link ? 'font-bold text-blue-500' : ''}`}
+                            className={`ms-4 md:ms-6 lg:ms-16 text-sm md:text-md lg:text-lg ${path === nav.link ? 'font-bold text-blue-500' : ''}`}
                             key={index}
                             href={nav.link}
                         >
