@@ -9,11 +9,11 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="mt-24 bg-hero-pattern-bottom bg-left-bottom bg-no-repeat px-12 pb-12 text-center text-white md:px-32 lg:px-48">
-      <h2 className="text-xl text-gray-200">
+    <footer className="mt-24 bg-hero-pattern-bottom bg-left-bottom bg-no-repeat px-12 pb-12 text-center text-black md:px-32 lg:px-48 dark:text-white">
+      <h2 className="text-xl dark:text-gray-200">
         Get in touch - Lets work together
       </h2>
-      <div className="mt-2 flex flex-col items-center justify-center gap-2 text-gray-400 md:flex-row">
+      <div className="mt-2 flex flex-col items-center justify-center gap-2 text-gray-500 md:flex-row dark:text-gray-400">
         <div className="flex flex-col items-center justify-center md:flex-row">
           <PiEnvelope />
           <p className="ms-2">yusriljiii@gmail.com</p>
