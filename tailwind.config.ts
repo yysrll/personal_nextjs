@@ -17,6 +17,7 @@ const config: Config = {
         'hero-pattern': "url('/background/bbblurry-blue.svg')",
         'hero-pattern-full': "url('/background/bbblurry-blue-full.svg')",
         'hero-pattern-bottom': "url('/background/bbblurry-blue-bottom.svg')",
+        'hero-pattern-top': "url('/background/bbblurry-blue-top.svg')",
       },
     },
   },

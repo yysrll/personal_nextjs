@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Experiences() {
   return (
-    <div className="mt-24">
+    <div className="mt-24 max-w-[600px]">
       <h2 className="text-center text-lg font-bold text-black dark:text-white">
         👨‍💻 Experiences
       </h2>
