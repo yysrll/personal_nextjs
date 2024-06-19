@@ -1,5 +1,3 @@
-import Footer from "../../components/Footer";
-import TopNav from "../../components/TopNav";
 import Hero from "./_components/Hero";
 import ProjectList from "./_components/ProjectList";
 
@@ -9,8 +7,6 @@ export default function Home() {
       <div className="">
         <Hero />
         <ProjectList />
-        <TopNav />
-        <Footer />
       </div>
     </main>
   );

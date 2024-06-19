@@ -16,9 +16,7 @@ export default function TopNav() {
         {navigations.map((nav, index) => (
           <Link
             className={`md:text-md rounded-lg px-4 py-2 text-sm transition duration-300 ease-in-out hover:bg-white/20 ${
-              path === nav.link
-                ? "font-bold text-blue-500 underline underline-offset-8"
-                : ""
+              path === nav.link ? "font-bold" : ""
             }`}
             key={index}
             href={nav.link}
@@ -38,7 +36,7 @@ const navigations = [
   },
   {
     name: "About",
-    link: "#",
+    link: "/about",
   },
   {
     name: "Project",
