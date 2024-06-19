@@ -2,7 +2,7 @@ import ProjectCard from "./ProjectCard";
 
 export default function ProjectList() {
   return (
-    <div className="bg-hero-pattern-full bg-right bg-no-repeat px-12 py-12 md:px-32 lg:px-48">
+    <div className="px-12 py-12 md:px-32 lg:px-48">
       <div className="flex flex-col items-center">
         <h2 className="text-xl font-bold text-black md:text-2xl dark:text-white">
           👨‍💻 Recent Projects
