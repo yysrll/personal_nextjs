@@ -1,19 +1,21 @@
-import React from 'react';
+import React from "react";
 
 interface ButtonProps {
-    onClick: () => void;
-    text: string;
+  target?: string;
+  href: string;
+  children: React.ReactNode;
 }
 
-const Button: React.FC<ButtonProps> = ({ onClick, text }) => {
-    return (
-        <button 
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-            onClick={onClick}
-        >
-            {text}
-        </button>
-    );
+const Button: React.FC<ButtonProps> = ({ target, href, children }) => {
+  return (
+    <a
+      target={target}
+      className="flex h-12 items-center justify-center rounded-xl bg-white px-4 font-semibold text-black transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-blue-500 hover:text-white"
+      href={href}
+    >
+      {children}
+    </a>
+  );
 };
 
 export default Button;

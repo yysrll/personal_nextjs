@@ -7,40 +7,46 @@ import { TiChartLine } from "react-icons/ti";
  */
 
 interface ProjectCardProps {
-    imageSrc: string;
-    title: string;
-    description: string;
+  imageSrc: string;
+  title: string;
+  description: string;
 }
 
-export default function ProjectCard({ imageSrc, title, description }: ProjectCardProps) {
-    return (
-        <div className="p-4 rounded-lg backdrop-blur-sm bg-white/20 cursor-pointer">
-            <div className="w-full aspect-video relative">
-                <Image
-                    src={imageSrc}
-                    alt={title}
-                    fill
-                    style={{
-                        objectFit: 'cover',
-                    }}
-                />
-            </div>
-            <div className="p-6">
-                <h2 className="text-md md:text-xl font-semibold">{title}</h2>
-                <p className="mt-2 text-sm text-gray-400 leading-6 line-clamp-3 text-ellipsis overflow-hidden">{description}</p>
-            </div>
-        </div>
-    );
+export default function ProjectCard({
+  imageSrc,
+  title,
+  description,
+}: ProjectCardProps) {
+  return (
+    <div className="cursor-pointer rounded-lg bg-white/20 p-4 backdrop-blur-sm">
+      <div className="relative aspect-video w-full">
+        <Image
+          src={imageSrc}
+          alt={title}
+          fill
+          style={{
+            objectFit: "cover",
+          }}
+        />
+      </div>
+      <div className="p-6">
+        <h2 className="text-md font-semibold md:text-xl">{title}</h2>
+        <p className="mt-2 line-clamp-3 overflow-hidden text-ellipsis text-sm leading-6 text-gray-400">
+          {description}
+        </p>
+      </div>
+    </div>
+  );
 }
 
 const labels = [
-    {
-        "name": "Laravel"
-    },
-    {
-        "name": "React"
-    },
-    {
-        "name": "Tailwind"
-    }
-]
+  {
+    name: "Laravel",
+  },
+  {
+    name: "React",
+  },
+  {
+    name: "Tailwind",
+  },
+];
