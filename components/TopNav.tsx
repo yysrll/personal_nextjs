@@ -3,16 +3,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 export default function TopNav() {
   const path = usePathname();
 
   return (
-    <nav className="fixed top-0 flex h-16 w-full items-center justify-between bg-white/10 px-12 backdrop-blur-lg md:px-32 lg:h-20 lg:px-48">
+    <nav className="fixed top-0 flex h-16 w-full items-center justify-between bg-gray-500/10 px-12 backdrop-blur-lg md:px-32 lg:h-20 lg:px-48 dark:bg-white/20">
       <div className="relative h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10">
         <Image src="/icon-white.svg" alt="Icon" fill />
       </div>
-      <div className="flex text-white">
+      <div className="flex text-black dark:text-white">
         {navigations.map((nav, index) => (
           <Link
             className={`md:text-md rounded-lg px-4 py-2 text-sm transition duration-300 ease-in-out hover:bg-white/20 ${
@@ -25,6 +26,7 @@ export default function TopNav() {
           </Link>
         ))}
       </div>
+      <ThemeSwitcher />
     </nav>
   );
 }

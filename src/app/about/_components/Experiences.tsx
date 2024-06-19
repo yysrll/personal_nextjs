@@ -3,7 +3,9 @@ import Image from "next/image";
 export default function Experiences() {
   return (
     <div className="mt-24">
-      <h2 className="text-center text-lg font-bold">👨‍💻 Experiences</h2>
+      <h2 className="text-center text-lg font-bold text-black dark:text-white">
+        👨‍💻 Experiences
+      </h2>
       {experiences.map((experience, index) => (
         <div key={index} className="mt-10">
           <ExperiencesItem {...experience} />
@@ -33,7 +35,7 @@ function ExperiencesItem({
   return (
     <div className="flex">
       <div>
-        <div className="rounded-2xl bg-white/20 p-4 backdrop-blur-2xl">
+        <div className="rounded-2xl bg-gray-500/20 p-4 backdrop-blur-2xl dark:bg-white/20">
           <div className="rounded-lg bg-white p-4">
             <div className="relative h-16 w-16">
               <Image
@@ -47,11 +49,13 @@ function ExperiencesItem({
         </div>
       </div>
       <div className="ml-4">
-        <h2 className="font-bold">{role}</h2>
-        <h3 className="text-gray-300">{company}</h3>
-        <p className="text-gray-500">{location}</p>
-        <p className="text-gray-500">{duration}</p>
-        <p className="mt-2 text-sm text-gray-600">{description}</p>
+        <h2 className="font-bold text-black dark:text-white">{role}</h2>
+        <h3 className="text-gray-700 dark:text-gray-300">{company}</h3>
+        <p className="text-gray-400 dark:text-gray-500">{location}</p>
+        <p className="text-gray-400 dark:text-gray-500">{duration}</p>
+        <p className="mt-2 text-sm text-gray-400 dark:text-gray-600">
+          {description}
+        </p>
       </div>
     </div>
   );

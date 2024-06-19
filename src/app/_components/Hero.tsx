@@ -11,10 +11,10 @@ export default function Hero() {
           <Image src="/me.png" alt="Github" fill />
         </div>
         <div className="md:mx-8 md:flex-grow lg:mx-20">
-          <h1 className="mt-6 text-2xl font-bold md:text-left">
+          <h1 className="mt-6 text-2xl font-bold text-black md:text-left dark:text-white">
             Hi, I&apos;m Yusril 👋
           </h1>
-          <p className="mt-4 font-light leading-6 text-gray-300 md:text-left">
+          <p className="mt-4 font-light leading-6 text-gray-600 md:text-left dark:text-gray-300">
             I breathe life into mobile apps with Kotlin & Flutter. Build
             beautiful, user-friendly experiences for iOS & Android.{" "}
             <span className="font-bold">Contact me</span> to discuss your

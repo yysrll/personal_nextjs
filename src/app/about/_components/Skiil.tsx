@@ -14,14 +14,14 @@ export default function Skill() {
   return (
     <>
       <div className="mt-24">
-        <h2 className="text-center text-lg font-bold">
+        <h2 className="text-center text-lg font-bold text-black dark:text-white">
           📚 Language and Framework
         </h2>
         <div className="flex-cols mt-6 flex flex-wrap justify-center gap-4">
           {languanges.map((lan, index) => (
             <div
               key={index}
-              className={`rounded-lg bg-white/20 p-6 ${lan.color} backdrop-blur-sm`}
+              className={`rounded-lg bg-gray-500/20 p-6 dark:bg-white/20 ${lan.color} backdrop-blur-sm`}
             >
               <div className="text-4xl">{lan.icon}</div>
             </div>
@@ -29,12 +29,14 @@ export default function Skill() {
         </div>
       </div>
       <div className="mt-12">
-        <h2 className="text-center text-lg font-bold">🛠 Tools</h2>
+        <h2 className="text-center text-lg font-bold text-black dark:text-white">
+          🛠 Tools
+        </h2>
         <div className="flex-cols mt-6 flex flex-wrap justify-center gap-4">
           {tools.map((tool, index) => (
             <div
               key={index}
-              className={`rounded-lg bg-white/20 p-6 ${tool.color} backdrop-blur-sm`}
+              className={`rounded-lg bg-gray-500/20 p-6 dark:bg-white/20 ${tool.color} backdrop-blur-sm`}
             >
               <div className="text-4xl">{tool.icon}</div>
             </div>
