@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ThemeSwitcher from "./ThemeSwitcher";
@@ -8,6 +7,7 @@ import { useState } from "react";
 import { CiMenuBurger } from "react-icons/ci";
 import { GoChevronDown } from "react-icons/go";
 import navigations from "../data/MenuData";
+import { FaCode } from "react-icons/fa";
 
 export default function TopNav() {
   const path = usePathname();
@@ -16,9 +16,7 @@ export default function TopNav() {
   return (
     <>
       <nav className="fixed top-0 flex h-16 w-full items-center justify-between bg-gray-500/10 px-12 backdrop-blur-lg dark:bg-white/10 md:px-32 lg:h-20 lg:px-48">
-        <div className="relative h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10">
-          <Image src="/icon-white.svg" alt="Icon" fill />
-        </div>
+        <FaCode className="h-6 w-6 text-black dark:text-white md:h-8 md:w-8 lg:h-10 lg:w-10" />
         <div className="hidden md:flex md:gap-4">
           <NavList path={path} />
         </div>
