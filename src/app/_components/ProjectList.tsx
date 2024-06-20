@@ -14,7 +14,7 @@ interface ProjectListProps {
 export default function ProjectList({ projects }: ProjectListProps) {
   return (
     <>
-      <div className="flex flex-col items-center">
+      <div className="mt-12 flex flex-col items-center md:mt-16">
         <h2 className="text-xl font-bold text-black dark:text-white md:text-2xl">
           👨‍💻 Recent Projects
         </h2>
