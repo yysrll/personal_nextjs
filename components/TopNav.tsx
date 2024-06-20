@@ -18,7 +18,7 @@ export default function TopNav() {
         <div className="relative h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10">
           <Image src="/icon-white.svg" alt="Icon" fill />
         </div>
-        <div className="hidden text-black dark:text-white md:flex">
+        <div className="hidden md:flex">
           <NavList path={path} />
         </div>
         <div className="flex gap-4">
@@ -57,7 +57,7 @@ function NavList({ path }: NavListProps) {
     <>
       {navigations.map((nav, index) => (
         <Link
-          className={`md:text-md rounded-lg px-4 py-2 text-sm transition duration-300 ease-in-out hover:bg-white/20 ${
+          className={`md:text-md rounded-lg px-4 py-2 text-sm text-black transition duration-300 ease-in-out hover:bg-white/20 dark:text-white ${
             path === nav.link ? "bg-white/40 font-bold dark:bg-white/20" : ""
           }`}
           key={index}
