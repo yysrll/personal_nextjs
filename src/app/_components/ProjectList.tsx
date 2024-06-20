@@ -1,4 +1,3 @@
-import projects from "../../../data/ProjectData";
 import ProjectCard from "./ProjectCard";
 
 interface ProjectProps {
