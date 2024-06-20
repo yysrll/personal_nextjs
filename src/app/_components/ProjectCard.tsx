@@ -40,15 +40,3 @@ export default function ProjectCard({
     </div>
   );
 }
-
-const labels = [
-  {
-    name: "Laravel",
-  },
-  {
-    name: "React",
-  },
-  {
-    name: "Tailwind",
-  },
-];
