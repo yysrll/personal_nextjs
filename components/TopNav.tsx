@@ -19,7 +19,7 @@ export default function TopNav() {
         <div className="relative h-6 w-6 md:h-8 md:w-8 lg:h-10 lg:w-10">
           <Image src="/icon-white.svg" alt="Icon" fill />
         </div>
-        <div className="hidden md:flex">
+        <div className="hidden md:flex md:gap-4">
           <NavList path={path} />
         </div>
         <div className="flex gap-4">
@@ -41,7 +41,7 @@ export default function TopNav() {
       <div
         className={`${open ? "" : "hidden"} fixed right-4 top-20 rounded-2xl bg-gray-500/10 backdrop-blur-lg transition-all duration-700 ease-out dark:bg-white/10 md:hidden`}
       >
-        <div className="flex flex-col p-4">
+        <div className="flex flex-col gap-4 p-4">
           <NavList path={path} />
         </div>
       </div>
