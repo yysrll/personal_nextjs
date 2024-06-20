@@ -7,6 +7,7 @@ import ThemeSwitcher from "./ThemeSwitcher";
 import { useState } from "react";
 import { CiMenuBurger } from "react-icons/ci";
 import { GoChevronDown } from "react-icons/go";
+import navigations from "../data/MenuData";
 
 export default function TopNav() {
   const path = usePathname();
@@ -69,18 +70,3 @@ function NavList({ path }: NavListProps) {
     </>
   );
 }
-
-const navigations = [
-  {
-    name: "Home",
-    link: "/",
-  },
-  {
-    name: "About",
-    link: "/about",
-  },
-  {
-    name: "Project",
-    link: "#",
-  },
-];
