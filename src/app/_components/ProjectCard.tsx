@@ -3,25 +3,21 @@ import Label from "../../../components/Label";
 import { TiChartLine } from "react-icons/ti";
 
 /**
- * @param {{ imageSrc: string, title: string, description: string }} props
+ * @param {{ image: string, title: string, description: string }} props
  */
 
-interface ProjectCardProps {
-  imageSrc: string;
+interface ProjectProps {
+  image: string;
   title: string;
   description: string;
 }
 
-export default function ProjectCard({
-  imageSrc,
-  title,
-  description,
-}: ProjectCardProps) {
+function ProjectCard({ image, title, description }: ProjectProps) {
   return (
     <div className="cursor-pointer rounded-lg bg-gray-500/10 p-4 backdrop-blur-sm transition hover:scale-110 hover:bg-gray-500/30 dark:bg-white/20 dark:hover:bg-white/30">
       <div className="relative aspect-video w-full">
         <Image
-          src={imageSrc}
+          src={image}
           alt={title}
           fill
           style={{
@@ -40,3 +36,5 @@ export default function ProjectCard({
     </div>
   );
 }
+
+export default ProjectCard;
