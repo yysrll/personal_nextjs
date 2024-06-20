@@ -9,7 +9,7 @@ export default function ThemeSwitcher() {
 
   return (
     <div
-      className="ml-3 flex justify-center rounded-xl bg-white p-4 dark:bg-gray-800"
+      className="ml-3 flex justify-center rounded-xl border border-gray-500 p-4"
       onClick={() => {
         if (theme === "dark") {
           return setTheme("light");
