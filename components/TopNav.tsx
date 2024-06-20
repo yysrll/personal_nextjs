@@ -23,15 +23,15 @@ export default function TopNav() {
         <div className="flex gap-4">
           <ThemeSwitcher />
           <div
-            className="rounded-xl border border-gray-500 p-4 md:hidden"
+            className="rounded-xl border border-black p-4 dark:border-white md:hidden"
             onClick={() => {
               isOpen(!open);
             }}
           >
             {open ? (
-              <GoChevronDown className="text-gray-500" />
+              <GoChevronDown className="text-black dark:text-white" />
             ) : (
-              <CiMenuBurger className="text-gray-500" />
+              <CiMenuBurger className="text-black dark:text-white" />
             )}
           </div>
         </div>
