@@ -33,22 +33,20 @@ function ExperiencesItem({
   description,
 }: ExperiencesItemProps) {
   return (
-    <div className="flex">
-      <div>
-        <div className="rounded-2xl bg-gray-500/20 p-4 backdrop-blur-2xl dark:bg-white/20">
-          <div className="rounded-lg bg-white p-4">
-            <div className="relative h-16 w-16">
-              <Image
-                src={companyLogo}
-                alt={`${company} Logo`}
-                fill
-                style={{ objectFit: "contain" }}
-              />
-            </div>
+    <div className="flex flex-col items-center gap-4 md:flex-row md:items-start">
+      <div className="h-fit w-fit rounded-2xl bg-gray-500/20 p-4 backdrop-blur-2xl dark:bg-white/20">
+        <div className="rounded-lg bg-white p-4">
+          <div className="relative h-16 w-16">
+            <Image
+              src={companyLogo}
+              alt={`${company} Logo`}
+              fill
+              style={{ objectFit: "contain" }}
+            />
           </div>
         </div>
       </div>
-      <div className="ml-4">
+      <div className="flex flex-col items-center text-center md:items-start md:text-left">
         <h2 className="font-bold text-black dark:text-white">{role}</h2>
         <h3 className="text-gray-700 dark:text-gray-300">{company}</h3>
         <p className="text-gray-400 dark:text-gray-500">{location}</p>
