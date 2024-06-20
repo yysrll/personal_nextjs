@@ -13,7 +13,7 @@ interface ProjectListProps {
 
 export default function ProjectList({ projects }: ProjectListProps) {
   return (
-    <div className="px-12 py-12 md:px-32 lg:px-48">
+    <>
       <div className="flex flex-col items-center">
         <h2 className="text-xl font-bold text-black dark:text-white md:text-2xl">
           👨‍💻 Recent Projects
@@ -27,6 +27,6 @@ export default function ProjectList({ projects }: ProjectListProps) {
           <ProjectCard key={index} {...project} />
         ))}
       </div>
-    </div>
+    </>
   );
 }
