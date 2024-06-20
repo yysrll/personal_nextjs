@@ -18,7 +18,7 @@ export default function ThemeSwitcher() {
       }}
     >
       {theme === "dark" ? (
-        <IoMoon className="text-dark" />
+        <IoMoon className="text-white" />
       ) : (
         <FiSun className="text-yellow-500" />
       )}
