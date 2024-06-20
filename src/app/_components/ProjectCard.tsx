@@ -29,7 +29,7 @@ function ProjectCard({ image, title, description }: ProjectProps) {
         <h2 className="text-md font-semibold text-black dark:text-white md:text-xl">
           {title}
         </h2>
-        <p className="mt-2 line-clamp-3 overflow-hidden text-ellipsis text-sm leading-6 text-gray-500 dark:text-gray-400">
+        <p className="mt-2 line-clamp-3 overflow-hidden text-ellipsis text-sm leading-6 text-gray-700 dark:text-gray-300">
           {description}
         </p>
       </div>
