@@ -83,8 +83,4 @@ const navigations = [
     name: "Project",
     link: "#",
   },
-  {
-    name: "Contact",
-    link: "#",
-  },
 ];
